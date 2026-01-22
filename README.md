@@ -9,7 +9,5 @@
 - “A good detective counts till the third mark.”  
   → Round the final answer to **3 decimal places**.
 
-Final computed answer: **0.567**
 
-Flag: IET{th3_r3@ct0r_1$@$t@r1n@_j@r}
 
