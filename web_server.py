@@ -1,10 +1,19 @@
+import os
 from flask import Flask, request, jsonify, render_template_string
 
 app = Flask(__name__)
 
-# ---- OFFICIAL ANSWER + FLAG ----
+# ---- OFFICIAL ANSWER ----
 CORRECT_ANSWER = "0.567"
-FLAG = "IET{th3_r3@ct0r_1$@$t@r1n@_j@r}"
+
+# ---- FLAG FROM ENVIRONMENT VARIABLE ----
+FLAG = os.getenv("FLAG")
+if not FLAG:
+    raise RuntimeError(
+        "FLAG environment variable is not set!\n"
+        "Set it before running the server.\n"
+        "Example (PowerShell): $env:FLAG='IET{...}'"
+    )
 
 # ---- Sherlock Themed Page ----
 HTML_PAGE = """
@@ -27,7 +36,7 @@ HTML_PAGE = """
         }
 
         .card {
-            width: min(600px, 92vw);   /* wider on desktop, responsive on mobile */
+            width: min(600px, 92vw);
             padding: 34px;
             border-radius: 18px;
             background: rgba(25, 25, 25, 0.92);
@@ -47,7 +56,7 @@ HTML_PAGE = """
             font-size: 15px;
             color: #cfcfcf;
             line-height: 1.75;
-            white-space: pre-line; /* keeps line breaks in your quote */
+            white-space: pre-line;
         }
 
         .hint {
@@ -173,7 +182,6 @@ def submit():
         """
 
 
-# Optional: API mode (JSON)
 @app.route("/api/check", methods=["POST"])
 def api_check():
     data = request.get_json(force=True)
@@ -187,4 +195,3 @@ def api_check():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
-
