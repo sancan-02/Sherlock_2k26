@@ -119,8 +119,9 @@ HTML_PAGE = """
     <div class="card">
         <h2>🕵️ Sherlock's Answer Vault</h2>
         <p>
-Baker Street begins where the letter yields to the number.
-When the mind grows restless, Holmes turns to a silent remedy — let x take its measure, and let the curve confess.
+When the mind grows restless, Holmes seeks a remedy—not in noise, but in chemistry.
+A quiet vial, precisely measured… not pure, but diluted to a careful fraction.
+Let x be the dose, let the curve confess its rise and fall—
         </p>
 
         <div class="hint">
@@ -186,3 +187,4 @@ def api_check():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
+
