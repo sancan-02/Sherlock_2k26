@@ -1,15 +1,28 @@
 # Challenge Notes
 
+CHALLENGE 1:
+
 - “Baker Street begins where the letter yields to the number.”  
-  → Convert the letter to its alphabet index (A=1, B=2, …).
+   Convert the letter to its alphabet index (A=1, B=2, …).
 
 - “When the mind grows restless, Holmes seeks a remedy—not in noise, but in chemistry.  
   A quiet vial, precisely measured… not pure, but diluted to a careful fraction.  
   Let x be the dose, let the curve confess its rise and fall—”  
-  → Treat **x** as the input “dose” value and substitute the given dose into the function (for this challenge: **x = 7**).  
-  → The “diluted fraction” indicates the output will be a **decimal value between 0 and 1**.
+  Treat **x** as the input “dose” value and substitute the given dose into the function (for this challenge: **x = 7**).  
+  The “diluted fraction” indicates the output will be a **decimal value between 0 and 1**.
 
 - “A good detective counts till the third mark.”  
-  → Round the final answer to **3 decimal places**.
+   Round the final answer to **3 decimal places**.
 
-Final computed answer: **0.972**
+CHALLENGE 2:
+
+- “Some secrets aren’t hidden in vaults, Watson… they’re hidden behind obedience.”  
+    Retrive the hidden data from the image provided and arrange the numbers obtained from mnist test data according to the sequence.
+
+- “It’s a machine, Watson.Speak to it.”  
+   Convert the obtained number into binary.
+
+
+ 
+
+
