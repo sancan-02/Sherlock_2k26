@@ -12,4 +12,4 @@
 - “A good detective counts till the third mark.”  
   → Round the final answer to **3 decimal places**.
 
-Final computed answer: **0.567**
+Final computed answer: **0.972**
