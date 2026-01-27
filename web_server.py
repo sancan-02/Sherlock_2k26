@@ -4,7 +4,7 @@ from flask import Flask, request, jsonify, render_template_string
 app = Flask(__name__)
 
 # ---- OFFICIAL ANSWER ----
-CORRECT_ANSWER = "0.567"
+CORRECT_ANSWER = "0.972"
 
 # ---- FLAG FROM ENVIRONMENT VARIABLE ----
 FLAG = os.getenv("FLAG")
@@ -195,3 +195,4 @@ def api_check():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
+
