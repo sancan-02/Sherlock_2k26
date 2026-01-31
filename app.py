@@ -7,7 +7,7 @@ app = Flask(__name__)
 CHALLENGE_1_ANSWER = bin(38901)[2:]
 
 # ---- Challenge 2 secret (server-only) ----
-CHALLENGE_2_ANSWER = "0.972"
+CHALLENGE_2_ANSWER = "0.99995"
 
 FLAG_1 = os.getenv("FLAG_1")
 FLAG_2 = os.getenv("FLAG_2")
@@ -483,7 +483,7 @@ Let x be the dose, let the curve confess its rise and fall—
         <div class="hint">
             The vault opens only to a value that is neither whole nor careless.
             A single slip, and the case collapses.
-            <div class="subtle">⚠️ A good detective counts till the <b>third mark</b>.</div>
+            <div class="subtle">⚠️ A good detective counts till the <b>fifth mark</b>.</div>
         </div>
 
         <form method="POST">
@@ -555,3 +555,4 @@ def index():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
+
