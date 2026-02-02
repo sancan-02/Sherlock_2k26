@@ -12,7 +12,7 @@ CHALLENGE 1:
   The “diluted fraction” indicates the output will be a **decimal value between 0 and 1**.
 
 - “A good detective counts till the third mark.”  
-   Round the final answer to **3 decimal places**.
+   Round the final answer to **5 decimal places**.
 
 CHALLENGE 2:
 
