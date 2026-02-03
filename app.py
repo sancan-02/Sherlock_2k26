@@ -3,11 +3,11 @@ from flask import Flask, request, render_template_string, jsonify, redirect, url
 
 app = Flask(__name__)
 
-# ---- Challenge 1 secret (server-only) ----
-CHALLENGE_1_ANSWER = bin(38901)[2:]
+CHALLENGE_1_ANSWER = os.getenv("CHALLENGE_1_ANSWER")
+CHALLENGE_2_ANSWER = os.getenv("CHALLENGE_2_ANSWER")
 
-# ---- Challenge 2 secret (server-only) ----
-CHALLENGE_2_ANSWER = "0.99995"
+if not CHALLENGE_1_ANSWER or not CHALLENGE_2_ANSWER:
+    raise RuntimeError("CHALLENGE_1_ANSWER and CHALLENGE_2_ANSWER must be set")
 
 FLAG_1 = os.getenv("FLAG_1")
 FLAG_2 = os.getenv("FLAG_2")
@@ -555,4 +555,5 @@ def index():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
+
 
